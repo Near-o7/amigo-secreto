@@ -32,7 +32,7 @@ function drawWinner(){
         let randomNumber = Math.floor(Math.random()*amigos.length);
         let winner = amigos[randomNumber]
         winnerHTML = document.querySelector('#resultado')
-        winnerHTML.innerHTML = winner
+        winnerHTML.innerHTML = `Felicidades ${winner}! saliste sorteado! ✨`
     }else{
         alert('Primero añade a un amigo')
     }
