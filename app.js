@@ -27,3 +27,13 @@ function listFriends(){
     } 
 }
 
+function drawWinner(){
+    if (amigos.length > 0 ){
+        let randomNumber = Math.floor(Math.random()*amigos.length);
+        let winner = amigos[randomNumber]
+        winnerHTML = document.querySelector('#resultado')
+        winnerHTML.innerHTML = winner
+    }else{
+        alert('Primero añade a un amigo')
+    }
+}
