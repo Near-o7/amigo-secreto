@@ -1,4 +1,4 @@
-let friends = []
+let amigos = []
 
 function addFriend(){
     friendName = document.querySelector('#amigo').value
@@ -6,12 +6,24 @@ function addFriend(){
     if (friendName === ""){
         alert('Por favor, inserte un nombre.')
     }else{
-        friends.push(friendName)
+        amigos.push(friendName)
         clearBox()
-        console.log(friends)
+        listFriends()
+        console.log(amigos)
     }
 }
 
 function clearBox(){
     document.querySelector('#amigo').value = ''
 }
+
+function listFriends(){
+    let lista = document.querySelector('#listaAmigos')
+    lista.innerHTML = ""
+    for (let amigo of amigos) {
+        let li = document.createElement('li');
+        li.textContent = amigo;  
+        lista.appendChild(li);   
+    } 
+}
+
