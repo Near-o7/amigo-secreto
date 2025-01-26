@@ -1,3 +1,3 @@
-<em> # Amigo secreto 🙊 </em>
+<em> Amigo secreto 🙊 </em>
 
 :construction: Proyecto en construcción :construction:
